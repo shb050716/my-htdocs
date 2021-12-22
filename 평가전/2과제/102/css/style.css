@@ -1,0 +1,193 @@
+﻿@keyframes z_ani{
+	10%{transform:rotate(0deg)}
+	20%{transform:rotate(180deg)}
+	100%{transform:rotate(180deg)}
+}
+
+*{margin:0 auto; padding:0; border:0; box-sizing:border-box; user-select:none}
+a{text-decoration:none; color:inherit}
+label{cursor:pointer}
+ .wrap{max-width:1000px}
+
+/* 로고 및 메뉴 영역 */ 
+header{width:100%; height:150px; position:fixed; top:0; transition:all .5s; z-index:9999; left:0}
+	header > .top{width:100%; height:100px; background:#fff; float:left}
+		header > .top > div{width:1000px;}
+			header > .top > div a{float:left; display:inline-block; width:50%;}
+			header > .top > div img{float:left; height:50px; margin:25px 0;}
+			header > .top > div svg{height:50px; margin:25px 0; float:left}
+			header > .top > div #z_ani{animation:z_ani 4s linear infinite; transform-origin:34.7px 35.8px}
+			header > .top > div > ul{float:right}
+			header > .top > div > ul > li{float:left; line-height:100px}
+				header > .top > div > ul > li > span{padding:0 15px}			
+	header > .menu{width:100%; height:50px; float:left; background:#3e3e3e}
+		header > .menu > div{position:relative}
+		header >  #hot_place1:checked ~ .menu > .wrap > .hot_place1{display:none}
+		header >  #hot_place2:checked ~.menu > .wrap > .hot_place2{display:none}
+		header >  #restaurant1:checked ~.menu > .wrap > .restaurant1{display:none}
+		header >  #restaurant2:checked ~.menu > .wrap > .restaurant2{display:none}
+		header >  #hot_place1:checked ~ .menu > .wrap > .hot_place1:hover ~ .sub_menu > div:nth-child(1){display:block}
+		header >  #hot_place1:checked ~ .menu > .wrap > .hot_place1 ~ .sub_menu > div:nth-child(1):hover{display:block}
+		header >  #hot_place2:checked ~ .menu > .wrap > .hot_place2:hover ~ .sub_menu > div:nth-child(1){display:block}
+		header >  #hot_place2:checked ~ .menu > .wrap > .hot_place2 ~ .sub_menu > div:nth-child(1):hover{display:block}
+		header >  #restaurant1:checked ~ .menu > .wrap > .restaurant1:hover ~ .sub_menu > div:nth-child(2){display:block}
+		header >  #restaurant1:checked ~ .menu > .wrap > .restaurant1 ~ .sub_menu > div:nth-child(2):hover{display:block}
+		header >  #restaurant2:checked ~ .menu > .wrap > .restaurant2:hover ~ .sub_menu > div:nth-child(2){display:block}
+		header >  #restaurant2:checked ~ .menu > .wrap > .restaurant2 ~ .sub_menu > div:nth-child(2):hover{display:block}
+		header >  #board1:checked ~ .menu > .wrap > .board1:hover ~ .sub_menu > div:nth-child(3){display:block}
+		header >  #board1:checked ~ .menu > .wrap > .board1 ~ .sub_menu > div:nth-child(3):hover{display:block}
+		header >  #board2:checked ~ .menu > .wrap > .board2:hover ~ .sub_menu > div:nth-child(3){display:block}
+		header >  #board2:checked ~ .menu > .wrap > .board2 ~ .sub_menu > div:nth-child(3):hover{display:block}
+		header >  #board1:checked ~.menu > .wrap > .board1{display:none}
+		header >  #board2:checked ~.menu > .wrap > .board2{display:none}
+		header > .menu > div > a, header > .menu > div > label{width:20%; float:left; text-align:center; cursor:pointer; height:50px; line-height:50px; color:#fff}
+		header > .menu > div > a:nth-child(1){background:#2587d2}
+		header > .menu > div > a:hover , header > .menu > div > label:hover{background:#000 !important; color:#F00}
+		header > .menu > div > label:hover ~  .sub_menu > div > div:nth-child(1){background:#000 !important; color:#f00}
+		header > .menu > div > label:nth-child(2), header > .menu > div > label:nth-child(3){background:#d72025}
+		header > .menu > div > label:nth-child(4), header > .menu > div > label:nth-child(5){background:#958d5a}
+		header > .menu > div > label:nth-child(6), header > .menu > div > label:nth-child(7){background:#d4a14e}
+		header > .menu > div > a:nth-child(8){background:#802709}
+		header > .menu > div > .sub_menu{width:100%; position:absolute; top:50px; left:0}
+			header > .menu > div > .sub_menu > div{width:20%; float:left; margin-left:20%; display:none}
+			header > .menu > div > .sub_menu > div:nth-child(2){margin-left:40%}
+			header > .menu > div > .sub_menu > div:nth-child(3){margin-left:60%}
+				header > .menu > div > .sub_menu > div > div{width:100%; height:50px; text-align:center; background:#999; color:#fff; line-height:50px}
+				header > .menu > div > .sub_menu > div > div:hover{background:#eee; color:#000; font-weight:bold}
+				header > .menu > div > .sub_menu > div > div:nth-child(1){margin-top:-50px; cursor:pointer}
+				header > .menu > div > .sub_menu > div > div:nth-child(1):hover{background:#000 !important; color:#f00; font-weight:normal}
+				header > .menu > div > .sub_menu > div:nth-child(1) > div:nth-child(1){background:#d72025}
+				header > .menu > div > .sub_menu > div:nth-child(2) > div:nth-child(1){background:#958d5a}
+				header > .menu > div > .sub_menu > div:nth-child(3) > div:nth-child(1){background:#d4a14e}								
+		
+@keyframes ani1{
+	0%{top:0}
+	24%{top:0%}
+	25%{top:-100%}
+	49%{top:-100%}
+	50%{top:-200%}
+	74%{top:-200%}
+	75%{top:-300%}
+	100%{top:-300%}
+}
+
+@keyframes ani2{
+	0%{top:-300%}
+	24%{top:-300%}
+	25%{top:-200%}
+	49%{top:-200%}
+	50%{top:-100%}
+	74%{top:-100%}
+	75%{top:0%}
+	100%{top:0%}
+}
+		
+/* 슬라이더 */
+.slider{width:100%; float:left; margin-top:150px; height:488px;}
+	.slider .wrap{width:100%; height:100%}
+	.slider img{width:100%}
+	.slider .wrap > div{width:25%; float:left; height:100%; position:relative; overflow:hidden}
+		.slider .wrap > div > div{width:100%; float:left; height:400%; overflow:hidden; position:absolute}
+			.slider .wrap > div > div > div{width:100%; height:25%; float:left; }
+			.slider .wrap > div > div > div > div{width:100%; height:25%; float:left; background:#fff}
+		.slider .wrap > div:nth-child(2n) > div> div:nth-child(1){background-image:url(../media/slide-04.jpg); background-size:1000px; }
+		.slider .wrap > div:nth-child(2n) > div > div:nth-child(2){background-image:url(../media/slide-03.jpg); background-size:1000px; }
+		.slider .wrap > div:nth-child(2n) > div > div:nth-child(3){background-image:url(../media/slide-02.jpg); background-size:1000px; }
+		.slider .wrap > div:nth-child(2n) > div > div:nth-child(4){background-image:url(../media/slide-01.jpg); background-size:1000px;}
+		
+		.slider .wrap > div:nth-child(2n) > div{animation:ani1 10s linear infinite; animation-direction:alternate-reverse}
+		.slider .wrap > div:nth-child(2n+1) > div{animation:ani2 10s linear infinite; animation-direction:alternate-reverse}
+		
+		.slider .wrap > div:nth-child(2n+1) > div > div:nth-child(1){background-image:url(../media/slide-01.jpg); background-size:1000px; }
+		.slider .wrap > div:nth-child(2n+1) > div > div:nth-child(2){background-image:url(../media/slide-02.jpg); background-size:1000px; }
+		.slider .wrap > div:nth-child(2n+1) > div > div:nth-child(3){background-image:url(../media/slide-03.jpg); background-size:1000px; }
+		.slider .wrap > div:nth-child(2n+1) > div > div:nth-child(4){background-image:url(../media/slide-04.jpg); background-size:1000px;}
+		.slider .wrap > div:nth-child(1) > div > div{background-position:0% 100%}
+		.slider .wrap > div:nth-child(2) > div > div{background-position:25% 100%}
+		.slider .wrap > div:nth-child(3) > div > div{background-position:50% 100%}
+		.slider .wrap > div:nth-child(4) > div > div{background-position:75% 100%}
+		
+
+
+/* 팝업창 */
+#popup:checked ~ .popup{display:none}
+.popup{position:fixed; z-index:999; top:200px; left:100px; width:300px; border:#000 solid 3px}
+	.popup img{float:left; width:100%}
+	.popup .close{width:100%; height:50px; background:#999; float:left; color:#fff; }
+		.popup .close label{display:inline-block; padding:5px; background:#333; border-radius:5px; color:#fff; height:30px; margin:10px}
+		
+/*태그 클라우드 및 팝업 버튼 */
+#tag_cloud:checked ~ .fixed .tag_cloud{border:#f90 solid 3px}
+#tag_cloud:checked ~ .fixed .tag_cloud > .line{display:block}
+#tag_cloud:checked ~ .fixed .tag_cloud > .info{display:block}
+#tag_cloud:checked ~ .fixed .tag_cloud > .content{display:block}
+#tag_cloud:checked ~ .fixed > .tag_cloud > label > span:nth-child(1){display:none}
+#tag_cloud:checked ~ .fixed > .tag_cloud > label > span:nth-child(2){display:block}
+.fixed{position:fixed; z-index:999; top:200px; right:100px; width:250px; background:#fff; display:inline-block; border:#000 solid 2px}
+	.fixed > label{display:inline-block; margin:15px; background:#000; color:#fff; border-radius:5px; width:20px; height:20px; line-height:20px; text-align:center}
+	.fixed > .tag_cloud{border:#fff solid 3px; border-radius:10px; width:80%; padding:15px; display:inline-block; margin:0 10%}
+		.fixed > .tag_cloud > label{float:right; width:20px; height:20px; background:#f90; color:#fff; border-radius:100%; text-align:center; line-height:20px; font-size:10px}
+			.fixed > .tag_cloud > label > span:nth-child(2){display:none}
+		.fixed > .tag_cloud > .line{float:left; width:100%; height:1px; margin:5px 0; background:#999; margin-bottom:0; display:none}
+		.fixed > .tag_cloud > .info{font-size:11px; float:left; width:100%; color:#666; margin-bottom:10px; display:none}
+		.fixed > .tag_cloud > .content{width:100%; float:left; color:#f90; display:none}
+			.fixed > .tag_cloud > .content .font1{font-size:10px}
+			.fixed > .tag_cloud > .content .font2{font-size:12px}
+			.fixed > .tag_cloud > .content .font3{font-size:14px}
+			.fixed > .tag_cloud > .content .font4{font-size:16px}
+			.fixed > .tag_cloud > .content .font5{font-size:18px; font-weight:bold}
+			
+/* 텍스트 영역 */
+.text_area{font-size: 1.5em; line-height: 1.4em; font-weight: 500;color: #333333; margin:0 auto; width:100%; float:left; margin-top:50px}
+	.text_area span{background-image:linear-gradient(to right, #97d6ec, #e18ae5); background-position:0% 100%; background-size:100% 5px; background-repeat:no-repeat}
+
+/* 스킬스 영역*/	
+#content1:checked ~ .skills_area .content:nth-child(1) > .content_con{height:250px}
+#content1:checked ~ .skills_area .content:nth-child(1) > .content_title span{transform:rotate(45deg)}
+#content2:checked ~ .skills_area .content:nth-child(2) > .content_con{height:100px}
+#content2:checked ~ .skills_area .content:nth-child(2) > .content_title span{transform:rotate(45deg)}
+#content3:checked ~ .skills_area .content:nth-child(3) > .content_con{height:150px}
+#content3:checked ~ .skills_area .content:nth-child(3) > .content_title span{transform:rotate(45deg)}
+#content4:checked ~ .skills_area .content:nth-child(4) > .content_con{height:300px}
+#content4:checked ~ .skills_area .content:nth-child(4) > .content_title span{transform:rotate(45deg)}
+#content5:checked ~ .skills_area .content:nth-child(5) > .content_con{height:150px}
+#content5:checked ~ .skills_area .content:nth-child(5) > .content_title span{transform:rotate(45deg)}
+#content6:checked ~ .skills_area .content:nth-child(6) > .content_con{height:100px}
+#content6:checked ~ .skills_area .content:nth-child(6) > .content_title span{transform:rotate(45deg)}
+
+.skills_area{width:100%; float:left; margin:50px 0;}
+	.skills_area .content{width:100%; float:left}
+		.skills_area .content > .content_title{width:100%; float:left; font-size:36px;}
+		.skills_area .content > .content_title:hover{color:#94BCD6}
+			.skills_area .content > .content_title span{float:right; vertical-align:middle; line-height:36px; transition:all .5s;}
+		.skills_area .content > .content_con{width:100%; float:left; margin:20px 0; overflow:hidden; height:0; transition:all .5s;}
+			.skills_area .content > .content_con div{width:33.333%; float:left; line-height:50px; height:50px}
+			.skills_area .content > .content_con div:hover{color:#94bcd6}
+				.skills_area .content > .content_con div:before{background:#94BCD6; height:5px; width:5px; content:''; display:inline-block; border-radius:100%; margin-right:15px; margin-top:-10px}
+				
+/* 이미지 및 동영상 영역 */
+.image_and_move_image{width:100%; float:left; height:300px; margin-bottom:100px}
+	.image_and_move_image .wrap{width:100%; height:100%}
+
+	/* 이미지 영역 */
+	.image_area{width:50%; float:left; padding-right:10px; position:relative; height:100%}
+		.image_area:hover > div > .image{transform:rotateX(180deg)}
+		.image_area:hover > div > .textarea{transform:rotateX(0deg)}
+		.image_area > div{width:100%; height:100%; position:relative}
+			.image_area > div > div{position:absolute; top:0; left:0; width:100%; height:100%; backface-visibility:hidden; transition:all .5s}
+				.image_area > div > div img{width:100%; height:100%; object-fit:cover}
+			.image_area > div > .textarea{transform:rotateX(180deg); padding:15px; background:#999}
+				.image_area > div > .textarea textarea{width:100%; height:100%; line-height:1.5em; padding:10px; font-size:16px}
+	/* 동영상 영역 */
+	.video_area{width:50%; float:left; padding-left:10px; height:100%}
+		.video_area > div{width:100%; height:100%; background:#000; line-height:300px;}
+			.video_area > div > video{max-width:100%; max-height:100%; line-height:300px; vertical-align:middle}
+
+/* 푸터 영역 */
+.footer{width:100%; float:left; height:50px; background:#333}
+	.footer .sns{height:40px; margin:5px 0; float:left}
+		.footer .sns > .img{margin:0 10px; float:left; line-height:40px}
+		.footer .sns > .img:hover > img{transform:translateY(-5px); filter:grayscale(100%)}
+		.footer .sns > .img > img{height:30px; vertical-align:middle; line-height:40px; transition:all .5s}
+	
+	

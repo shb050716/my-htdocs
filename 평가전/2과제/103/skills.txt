@@ -1,0 +1,69 @@
+1. Construction and Building Technology
+    - Architectural Stonemasonry
+    - Bricklaying
+    - Cabinetmaking
+    - Carpentry
+    - Concrete Construction Work
+    - Electrical Installations
+    - Joinery
+    - Landscape Gardening
+    - Painting and Decorating
+    - Plastering and Drywall Systems
+    - Plumbing and Heating
+    - Refrigeration and Air Conditioning
+    - Wall and Floor Tiling
+
+2. Creative Arts and Fashion
+    - 3D Digital Game Art
+    - Fashion Technology
+    - Floristry
+    - Graphic Design Technology
+    - Jewellery
+    - Visual Merchandising
+
+3. Information and Communication Technology
+    - Cloud Computing
+    - Cyber Security
+    - Information Network Cabling
+    - IT Network Systems Administration
+    - IT Software Solutions for Business
+    - Print Media Technology
+    - Web Technologies
+
+4. Manufacturing and Engineering Technology
+    - Chemical Laboratory Technology
+    - CNC Milling
+    - CNC Turning
+    - Construction Metal Work
+    - Electronics
+    - Industrial Control
+    - Industrial Mechanic Millwright
+    - Manufacturing Team Challenge
+    - Mechanical Engineering CAD
+    - Mechatronics
+    - Mobile Robotics
+    - Plastic Die Engineering
+    - Polymechanics and Automation
+    - Prototype Modelling
+    - Water Technology
+    - Welding
+
+5. Social and Personal Services
+    - Bakery
+    - Beauty Therapy
+    - Cooking
+    - Hairdressing
+    - Health and Social Care
+    - Hotel Reception
+    - Pâtisserie and Confectionery
+    - Restaurant Service
+
+6. Transportation and Logistics
+    - Aircraft Maintenance
+    - Autobody Repair
+    - Automobile Technology
+    - Car Painting
+    - Freight Forwarding
+    - Heavy Vehicle Technology
+
+

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.92 71.58">
+	<style>
+		path{ fill:url(#gradient); transform-origin:48% 50%; animation:rotateZ 3s infinite; }
+		<![CDATA[
+			@keyframes rotateZ{
+				0%{ transform:rotateZ(0deg); }
+				33%{ transform:rotateZ(180deg); }
+				100%{ transform:rotateZ(180deg); }
+			}
+		]]>
+	</style>
+
+	<defs>
+		<linearGradient id="gradient" x1="0%" x2="0%" y1="100%" y2="0%">
+			<stop offset="0%" stop-color="#f7c400">
+				<animate attributeName="stop-color" id="op" values="#f7c400;#f7c400;#b4211a;#b4211a;#b4211a;" dur="1" begin="1s;op.end+2"></animate>
+			</stop>
+			<stop offset="100%" stop-color="#f7c400">
+				<animate attributeName="stop-color" id="op" values="#f7c400;#b4211a;#b4211a;#b4211a;#b4211a;" dur="1" begin="1s;op.end+2"></animate>
+			</stop>
+		</linearGradient>
+	</defs>
+	<title>Asset 5</title>
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_1-2" data-name="Layer 1">
+			<path class="cls-1" d="M3.86,0h62.6V14.31L26.27,56.2H67.92V71.58H0V56.74L39.76,15.28H3.86Z"/>
+		</g>
+	</g>
+</svg>

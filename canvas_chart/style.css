@@ -1,0 +1,19 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+.f, .fs , .fc, .fe , .fas ,.fac , .fae, .fw,.fd{display: flex;
+}
+.fs{justify-content: flex-start;}
+.fc{justify-content: center;}
+.fe{justify-content: flex-end;}
+.fas{align-items: flex-start;}
+.fac{align-items: center;}
+.fae{align-items: flex-end;}
+.fw{justify-content: space-between;}
+.fd {flex-direction: column;}
+
+.canvasNumber{
+    display: block;
+}

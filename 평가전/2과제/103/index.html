@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>러시아 카잔</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./font/cufon-yui.js"></script>
+	<script src="./font/NanumGothic_400.font.js"></script>
+	<script type='text/javascript' charset='utf-8'>
+		Cufon.replace('.link, h4', { 
+			hover: true, fontFamily: 'NanumGothic'
+		 });
+	</script>
+</head>
+<body>
+
+	<object data="dump" id="full">
+		<param name="EnableContextMenu" value="false">
+	</object>
+
+	<input type="radio" name="popup" id="openPopup" hidden checked>
+	<input type="radio" name="popup" id="closePopup" hidden>
+	<input type="radio" name="cloud" id="openCloud" hidden>
+	<input type="radio" name="cloud" id="closeCloud" hidden>
+	
+	<!-- 태그 클라우드 & 팝업 바튼 영역 -->
+	<div class="fixed-group">
+		<div class="fixed-item">
+			<div class="fixed-label-group">
+				<label for="openPopup" class="openPopup-btn">
+					<span></span> popup
+				</label>
+				<label for="openCloud" class="openCloud-btn">#</label>
+				<div class="cloud-popup">
+					<div class="cloud-item">
+						<div class="top">
+							<div class="top-item">
+								<label for="closeCloud">&times;</label>
+							</div>
+						</div>
+						<div class="bot">
+							<h6>Tag Cloud</h6>
+							<div class="bot-item">
+								<span class="level-2">기능올림픽</span>
+								<span class="level-5">KAZAN</span>
+								<span class="level-1">관광</span>
+								<span class="level-4">Web-Design</span>
+								<span class="level-3">금메달</span>
+								<span class="level-2">경기장위치</span>
+								<span class="level-1">맛집</span>
+								<span class="level-3">숙소</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 팝업 영역 -->
+	<div class="popup">
+		<div class="dialog">
+			<div class="content">
+				<img src="media/map.jpg" alt="map" title="map">
+			</div>
+			<div class="btn-group">
+				<label for="closePopup">닫기</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- 로고&메뉴 영역 -->
+	<header>
+		<div class="top-header">
+			<a href="#" class="logo">
+				<img src="./media/symbol.png" alt="logo" title="logo">
+				<span class="char">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</a>
+			<ul class="link">
+				<li>
+					<a href="#">HOME</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">LANGUAGE</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">CONTACTS</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 네비게이션 영역 -->
+		<nav>
+			<input type="radio" name="hot" id="hot1" hidden checked>
+			<input type="radio" name="hot" id="hot2" hidden>
+			<input type="radio" name="rest" id="rest1" hidden checked>
+			<input type="radio" name="rest" id="rest2" hidden>
+			<input type="radio" name="board" id="board1" hidden checked>
+			<input type="radio" name="board" id="board2" hidden>
+
+			<label for="hot1" class="submenu-label">
+				<object data="dump">
+					<param name="EnableContextMenu" value="false">
+				</object>
+			</label>
+
+			<label for="hot2" class="submenu-label">
+				<object data="dump">
+					<param name="EnableContextMenu" value="false">
+				</object>
+			</label>
+
+			<label for="rest1" class="submenu-label">
+				<object data="dump">
+					<param name="EnableContextMenu" value="false">
+				</object>
+			</label>
+
+			<label for="rest2" class="submenu-label">
+				<object data="dump">
+					<param name="EnableContextMenu" value="false">
+				</object>
+			</label>
+
+			<label for="board1" class="submenu-label">
+				<object data="dump">
+					<param name="EnableContextMenu" value="false">
+				</object>
+			</label>
+
+			<label for="board2" class="submenu-label">
+				<object data="dump">
+					<param name="EnableContextMenu" value="false">
+				</object>
+			</label>
+
+			<ul class="menu">
+				<li>History</li>
+				<li>
+					Hot Place
+					<ul class="submenu hot1">
+						<li>Kremlin</li>
+						<li>Kazan Cathedral</li>
+						<li>Baumana Street</li>
+						<li>Kazan Arena</li>
+					</ul>
+					<ul class="submenu hot2">
+						<li>Kremlin</li>
+						<li>Kazan Cathedral</li>
+						<li>Baumana Street</li>
+						<li>Kazan Arena</li>
+					</ul>
+				</li>
+				<li>Restaurant
+					<ul class="submenu rest1">
+						<li>Tan Dzen</li>
+						<li>Bushe</li>
+						<li>Relab</li>
+					</ul>
+					<ul class="submenu rest2">
+						<li>Tan Dzen</li>
+						<li>Bushe</li>
+						<li>Relab</li>
+					</ul>
+				</li>
+				<li>
+					Board
+					<ul class="submenu board1">
+						<li>Notice</li>
+						<li>Gallery</li>
+					</ul>
+					<ul class="submenu board2">
+						<li>Notice</li>
+						<li>Gallery</li>
+					</ul>
+				</li>
+				<li>Tour Info.</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- 콘텐츠 영역 -->
+	<div id="app">
+		<!-- 슬라이드 영역 -->
+		<article id="slide-area">
+			<div class="slide">
+				<div class="slide1"></div>
+				<div class="slide2"></div>
+				<div class="slide3"></div>
+				<div class="slide4"></div>
+				<div class="slide3"></div>
+				<div class="slide2"></div>
+			</div>
+			<div class="slide">
+				<div class="slide1"></div>
+				<div class="slide2"></div>
+				<div class="slide3"></div>
+				<div class="slide4"></div>
+				<div class="slide3"></div>
+				<div class="slide2"></div>
+			</div>
+			<div class="slide">
+				<div class="slide1"></div>
+				<div class="slide2"></div>
+				<div class="slide3"></div>
+				<div class="slide4"></div>
+				<div class="slide3"></div>
+				<div class="slide2"></div>
+			</div>
+			<div class="slide">
+				<div class="slide1"></div>
+				<div class="slide2"></div>
+				<div class="slide3"></div>
+				<div class="slide4"></div>
+				<div class="slide3"></div>
+				<div class="slide2"></div>
+			</div>
+		</article>
+
+		<!-- 텍스트 영역 -->
+		<article id="text-area">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		</article>
+	
+		<!-- 스킬 영역 -->
+		<article id="skills-area">
+			<input type="checkbox" id="skill1" hidden>
+			<input type="checkbox" id="skill2" hidden>
+			<input type="checkbox" id="skill3" hidden>
+			<input type="checkbox" id="skill4" hidden>
+			<input type="checkbox" id="skill5" hidden>
+			<input type="checkbox" id="skill6" hidden>
+
+			<div class="item">
+				<label for="skill1" class="item-title">
+					<span>Construction and Building Technology</span>
+					<span class="close">
+						<span>+</span>
+					</span>
+				</label>
+				<div class="hidden-item">
+					<ul>
+						<li>Architectural Stonemasonry</li>
+						<li>Carpentry</li>
+						<li>Joinery</li>
+						<li>Plastering and Drywall Systems</li>
+						<li>Wall and Floor Tiling</li>
+					</ul>
+					<ul>
+						<li>Bricklaying</li>
+						<li>Concrete Construction Work</li>
+						<li>Landscape Gardening</li>
+						<li>Plumbing and Heating</li>
+					</ul>
+					<ul>
+						<li>Cabinetmaking</li>
+						<li>Electrical Installations</li>
+						<li>Painting and Decorating</li>
+						<li>Refrigeration and Air Conditioning</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<label for="skill2" class="item-title">
+					<span>Creative Arts and Fashion</span>
+					<span class="close">
+						<span>+</span>
+					</span>
+				</label>
+				<div class="hidden-item">
+					<ul>
+						<li>3D Digital Game Art</li>
+						<li>Graphic Design Technology</li>
+					</ul>
+					<ul>
+						<li>Fashion Technology</li>
+						<li>Jewellery</li>
+					</ul>
+					<ul>
+						<li>Floristry</li>
+						<li>Visual Merchandising</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<label for="skill3" class="item-title">
+					<span>Information and Communication Technology</span>
+					<span class="close">
+						<span>+</span>
+					</span>
+				</label>
+				<div class="hidden-item">
+					<ul>
+						<li>Cloud Computing</li>
+						<li>IT Network Systems Administration</li>
+						<li>Web Technologies</li>
+					</ul>
+					<ul>
+						<li>Cyber Security</li>
+						<li>IT Software Solutions for Business</li>
+					</ul>
+					<ul>
+						<li>Information Network Cabling</li>
+						<li>Print Media Technology</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<label for="skill4" class="item-title">
+					<span>Manufacturing and Engineering Technology</span>
+					<span class="close">
+						<span>+</span>
+					</span>
+				</label>
+				<div class="hidden-item">
+					<ul>
+						<li>Chemical Laboratory Technology</li>
+						<li>Construction Metal Work</li>
+						<li>Industrial Mechanic Millwright</li>
+						<li>Mechatronics</li>
+						<li>Polymechanics and Automation</li>
+						<li>Welding</li>
+					</ul>
+					<ul>
+						<li>CNC Milling</li>
+						<li>Electronics</li>
+						<li>Manufacturing Team Challenge</li>
+						<li>Mobile Robotics</li>
+						<li>Prototype Modelling</li>
+					</ul>
+					<ul>
+						<li>CNC Turning</li>
+						<li>Industrial Control</li>
+						<li>Mechanical Engineering CAD</li>
+						<li>Plastic Die Engineering</li>
+						<li>Water Technology</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<label for="skill5" class="item-title">
+					<span>Social and Personal Services</span>
+					<span class="close">
+						<span>+</span>
+					</span>
+				</label>
+
+				<div class="hidden-item">
+					<ul>
+						<li>Bakery</li>
+						<li>Hairdressing</li>
+						<li>Pâtisserie and Confectionery</li>
+					</ul>
+					<ul>
+						<li>Beauty Therapy</li>
+						<li>Health and Social Care</li>
+						<li>Restaurant Service</li>
+					</ul>
+					<ul>
+						<li>Cooking</li>
+						<li>Hotel Reception</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<label for="skill6" class="item-title">
+					<span>Transportation and Logistics</span>
+					<span class="close">
+						<span>+</span>
+					</span>
+				</label>
+
+				<div class="hidden-item">
+					<ul>
+						<li>Aircraft Maintenance</li>
+						<li>Car Painting</li>
+					</ul>
+					<ul>
+						<li>Autobody Repair</li>
+						<li>Freight Forwarding</li>
+					</ul>
+					<ul>
+						<li>Automobile Technology</li>
+						<li>Heavy Vehicle Technology</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+
+		<!-- 이미지 영역 -->
+		<article id="image-area">
+			<div class="flip">
+				<div class="front">
+					<!-- <img src="media/memo.jpg" alt="memo" title="memo"> -->
+				</div>
+				<div class="back">
+					<textarea></textarea>
+				</div>
+			</div>
+		</article>
+
+		<!-- 동영상 영역 -->
+		<article id="movie-area">
+			<div class="video">
+				<video src="media/kazan.mp4" controls></video>
+			</div>
+		</article>
+
+		<!-- 푸터 영역 -->
+		<footer>
+			<img src="media/sns-01.png" alt="sns-icon" title="sns-icon">
+			<img src="media/sns-02.png" alt="sns-icon" title="sns-icon">
+			<img src="media/sns-03.png" alt="sns-icon" title="sns-icon">
+			<img src="media/sns-04.png" alt="sns-icon" title="sns-icon">
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./(공통)%20선수제공파일/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="(공통) 선수제공파일/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="(공통) 선수제공파일/bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+<section id="cart" class="controller ">
+    <div id="shopping_cart" class="position fd" style="margin:50px ">
+        <div class="jangbaguni">
+            <h1>장바구니</h1>
+        </div>
+        <div class="buy f">
+            <p>총합계 : 0</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                구매하기
+            </button>
+        </div>
+        <div class="table_size f">
+            <div class="table_box">
+                <table border="1" class="ta">
+                    <thead>
+                    <tr>
+                        <td>사진</td>
+                        <td>상품명</td>
+                        <td>브랜드명</td>
+                        <td>가격</td>
+                        <td colspan='2'>수량</td>
+                        <td>합계</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--                <tr>-->
+                    <!--                    <td><img src="./B모듈 선수제공파일/store/상품사진/product_1.jpg" alt=""></td>-->
+                    <!--                    <td>마틸라</td>-->
+                    <!--                    <td>마틸라</td>-->
+                    <!--                    <td>17,100</td>-->
+                    <!--                    <td class = "change" colspan = '2'><input type="number" value = "1" min = "1"></td>-->
+                    <!--                    <td class = "delete">17,100 <input type="button" value = "삭제"></td>-->
+                    <!--                </tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="controller" id="asdfasdfasdf">
+
+    <div class="list fae">
+        <h1>상품리스트</h1>
+        <input class="search" type="search">
+        <input class="search_button" type="button" value="검색">
+    </div>
+    <div class="controller f" style="height: 2000px;">
+        <div class="list-g f">
+            <!--                <div class = "marge">-->
+            <!--                    <img src="./B모듈 선수제공파일/store/상품사진/product_1.jpg" alt="">-->
+            <!--                    <div class= "img_textbox">-->
+            <!--                        <h3>상품명 : 마틸다</h3>-->
+            <!--                        <p>브랜드명 : 마틸라</p>-->
+            <!--                     <p>가격 : 17,100</p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class = "marge">-->
+            <!--                    <img src="./B모듈 선수제공파일/store/상품사진/product_1.jpg" alt="">-->
+            <!--                    <div class= "img_textbox">-->
+            <!--                        <h3>상품명 : 마틸다</h3>-->
+            <!--                        <p>브랜드명 : 마틸라</p>-->
+            <!--                        <p>가격 : 17,100</p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class = "marge">-->
+            <!--                    <img src="./B모듈 선수제공파일/store/상품사진/product_1.jpg" alt="">-->
+            <!--                    <div class= "img_textbox">-->
+            <!--                        <h3>상품명 : 마틸다</h3>-->
+            <!--                        <p>브랜드명 : 마틸라</p>-->
+            <!--                        <p>가격 : 17,100</p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+        </div>
+
+    </div>
+    <div class="drop">
+        <div class="drop_text fc fac">
+            <p>이곳에 상품을 넣어주세요.</p>
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+</html>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">구매하기</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body fd">
+                이름 <input type="text" class="input_name form-control" required>
+                주소 <input type="text" class="input_juso form-control " required>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary">구매 완료</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal Mo" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">구매 내역</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body cart_list">
+                <div class="table_size f">
+                    <div class="table_box">
+                        <table border="1">
+                            <thead>
+                            <tr>
+                                <td>사진</td>
+                                <td>상품명</td>
+                                <td>브랜드명</td>
+                                <td>가격</td>
+                                <td colspan='2'>수량</td>
+                                <td>합계</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--                            <tr>-->
+                            <!--                                <td><img src="./B모듈 선수제공파일/store/상품사진/product_1.jpg" alt=""></td>-->
+                            <!--                                <td>마틸라</td>-->
+                            <!--                                <td>마틸라</td>-->
+                            <!--                                <td>17,100</td>-->
+                            <!--                                <td class="change" colspan='2'>1</td>-->
+                            <!--                                <td class="delete">17,100</td>-->
+                            <!--                            </tr>-->
+                            <div class="cart_time">
+                                <!--                                <h3></h3>-->
+                            </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer foo">
+                <!--                <button type="button" class="btn btn-primary">확인</button>-->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">확인</button>
+            </div>
+        </div>
+    </div>
+</div>

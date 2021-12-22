@@ -1,0 +1,147 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+.controller{
+    width: 1000px;
+    max-width: 1000px;
+    margin : 0 auto ;
+}
+
+html , body , main {
+    overflow-x: hidden;
+
+}
+
+html {
+    height: 3000px;
+}
+
+body {
+    height: 100%;
+}
+
+.f, .fs , .fc, .fe , .fas ,.fac , .fae, .fw,.fd{display: flex;
+}
+.fs{justify-content: flex-start;}
+.fc{justify-content: center;}
+.fe{justify-content: flex-end;}
+.fas{align-items: flex-start;}
+.fac{align-items: center;}
+.fae{align-items: flex-end;}
+.fw{justify-content: space-between;}
+.fd {flex-direction: column}
+#shopping_cart{
+    position:relative;
+    height: 600px;
+    border-bottom : 5px solid black;
+}
+.jangbaguni{
+    /*position:absolute;*/
+    top: 100px;
+}
+/*.list{*/
+/*    height: 20px;*/
+/*}*/
+.position{
+    position:relative;
+}
+section input{
+    margin-left: 20px;
+}
+.buy{
+    /*position: absolute;*/
+    top: 120px;
+    left: 200px;
+}
+.list-g img{
+    border-radius: 3px;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+.img_textbox{
+    border: solid #f1f1f1 2px;
+    width: 200px;
+    height: 70px;
+
+}
+.img_textbox h3{
+    font-size: 0.7rem;
+}
+.img_textbox p{
+    font-size: 0.7rem;
+}
+.list-g{
+    flex-wrap : wrap;
+    width: 100%;
+    height: 2300px;
+}
+.marge{
+    margin: 40px;
+    width: 200px;
+    height: 320px;
+}
+.drop{
+    position:fixed;
+    top : 400px;
+    left : 1550px;
+    border: solid #606060 2px;
+    border-radius: 20px;
+    width: 150px;
+    height: 300px;
+}
+.drop_text{
+    width: 150px;
+    height: 300px;
+    /*text-align: center;*/
+}
+.drop_text p{
+    font-size: 0.7rem;
+}
+.table_size{
+    /*position : absolute;*/
+    top: 150px;
+    width: 500px;
+    height: 36px;
+}
+thead tr td{
+    text-align: center;
+    width: 16.6666%;
+    height: 30px;
+}
+tbody tr td{
+    text-align: center;
+}
+tbody tr td img{
+    width: 75px;
+    height: 75px;
+}
+tbody td input {
+    width: 75px;
+    height: 20px;
+}
+.table_box{
+    width: 450px;
+}
+.input_box{
+    height: 132px;
+}
+tbody td input{
+    width: 40px;
+    height: 40px;
+}
+.Mo .modal-dialog{
+    max-width: 100%;
+    width: auto;
+    display:table;
+}
+.Mo .modal-body{
+    height: 1000px;
+}
+
+.higthlight {
+    color: #ffff22;
+}
+
