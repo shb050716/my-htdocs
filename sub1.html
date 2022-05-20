@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/vendor/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body class="position-relative" style="overflow-x: hidden">
+<header class="position-fixed">
+    <div class="container h-100 d-flex justify-content-between align-items-center">
+        <input type="checkbox" id="check" name="check">
+        <a href="./index.html"><img src="./public/image/logo.svg" class="logo" title="logo" alt="logo"></a>
+        <label for="check" class="menu d-none d-sm-flex flex-sm-column">
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+        </label>
+        <div class="burger d-none d-sm-flex flex-column">
+            <details>
+                <summary>아파트 소개</summary>
+                <div class="d-flex flex-column">
+                    <a href="#">단지 안내</a>
+                    <a href="#">단지 배치도</a>
+                    <a href="#">평면도</a>
+                    <a href="#">커뮤니티 시설</a>
+                    <a href="#">오시는 길</a>
+                </div>
+            </details>
+            <details>
+                <summary>대표회의</summary>
+                <div class="d-flex flex-column">
+                    <a href="#">회장 인사말</a>
+                    <a href="#">대표회 구성</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">추진현황</a>
+                    <a href="#">규정 및 규약</a>
+                </div>
+            </details>
+            <details>
+                <summary>입주민 공간</summary>
+                <div class="d-flex flex-column">
+                    <a href="#">자유게시판</a>
+                    <a href="#">갤러리</a>
+                    <a href="#">생활상식</a>
+                    <div class="d-flex">
+                        <a href="#" class="d-flex align-items-start">행사 안내</a>
+                        <div class="d-flex flex-column">
+                            <a href="./sub1.html" class="sub">이달의 행사</a>
+                            <a href="#" class="sub">연간 행사</a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="d-flex align-items-start">민원 관리</a>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="sub">시설 민원</a>
+                            <a href="#" class="sub">일반 민원</a>
+                            <a href="#" class="sub">보안 민원</a>
+                            <a href="#" class="sub">청소 민원</a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details>
+                <summary>선거투표</summary>
+            </details>
+            <details>
+                <summary>주변정보</summary>
+                <div class="d-flex flex-column">
+                    <a href="#">상가</a>
+                    <a href="#">관공서</a>
+                    <a href="#">교육</a>
+                    <a href="#">문화</a>
+                </div>
+            </details>
+            <details>
+                <summary>예약관리</summary>
+                <div class="d-flex flex-column">
+                    <a href="#">스크린 골프</a>
+                    <a href="#">도서실</a>
+                    <a href="#">조식</a>
+                </div>
+            </details>
+            <details>
+                <summary>마이페이지</summary>
+                <div class="d-flex flex-column">
+                    <a href="#">공과금 사용량 조회</a>
+                    <a href="#">관리비 조회</a>
+                    <a href="#">CCTV 조회</a>
+                </div>
+            </details>
+            <div class="d-flex utility-sm-btn">
+                <button>로그인</button>
+                <button>문의하기</button>
+            </div>
+        </div>
+        <ul class="d-flex nav d-sm-none">
+            <li>
+                <a href="#" id="depth-1">아파트 소개</a>
+                <div class="depth2" id="depth2-1">
+                    <div>
+                        <a href="#">단지 안내</a>
+                        <a href="#">단지 배치도</a>
+                        <a href="#">평면도</a>
+                        <a href="#">커뮤니티 시설</a>
+                        <a href="#">오시는 길</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" id="depth-2">대표회의</a>
+                <div class="depth2" id="depth2-2">
+                    <div>
+                        <a href="#">회장 인사말</a>
+                        <a href="#">대표회 구성</a>
+                        <a href="#">공지사항</a>
+                        <a href="#">추진현황</a>
+                        <a href="#">규정 및 규약</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" id="depth-3">입주민 공간</a>
+                <div class="depth2" id="depth2-3">
+                    <div>
+                        <a href="#">자유게시판</a>
+                        <a href="#">갤러리</a>
+                        <a href="#">생활상식</a>
+                        <div class="d-flex">
+                            <a href="#" class="d-flex align-items-start">행사 안내</a>
+                            <div class="d-flex flex-column">
+                                <a href="./sub1.html" class="sub">이달의 행사</a>
+                                <a href="#" class="sub">연간 행사</a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#" class="d-flex align-items-start">민원 관리</a>
+                            <div class="d-flex flex-column">
+                                <a href="#" class="sub">시설 민원</a>
+                                <a href="#" class="sub">일반 민원</a>
+                                <a href="#" class="sub">보안 민원</a>
+                                <a href="#" class="sub">청소 민원</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" id="depth-4">선거/투표</a>
+                <div class="depth2" id="depth2-4">
+                    <div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" id="depth-5">주변정보</a>
+                <div class="depth2" id="depth2-5">
+                    <div>
+                        <a href="#">상가</a>
+                        <a href="#">관공서</a>
+                        <a href="#">교육</a>
+                        <a href="#">문화</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" id="depth-6">예약관리</a>
+                <div class="depth2" id="depth2-6">
+                    <div>
+                        <a href="#">스크린 골프</a>
+                        <a href="#">도서실</a>
+                        <a href="#">조식</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" id="depth-7">마이페이지</a>
+                <div class="depth2" id="depth2-7">
+                    <div>
+                        <a href="#">공과금 사용량 조회</a>
+                        <a href="#">관리비 조회</a>
+                        <a href="#">CCTV 조회</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="utility-btn d-sm-none">
+            <button>로그인</button>
+            <button>문의하기</button>
+        </div>
+    </div>
+</header>
+<section id="calender" style="height: 1000px;">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-end">
+            <h2 class="font-weight-bold">이달의 행사</h2>
+            <div class="d-flex">
+                <span>HOME > 입주민 공간 > 행사 안내 > <b class="text-success">이달의 행사</b></span>
+            </div>
+        </div>
+        <hr>
+        <h2>5월</h2>
+        <table class="table table-bordered">
+            <thead class="text-center">
+            <tr>
+                <th class="text-danger">일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th class="text-info">토</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-danger">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td class="text-info">7</td>
+            </tr>
+            <tr>
+                <td class="text-danger">8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td class="text-info">14</td>
+            </tr>
+            <tr>
+                <td class="text-danger">15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td class="text-info">21, <b style="color: tomato">경기당일</b></td>
+            </tr>
+            <tr>
+                <td class="text-danger">22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td class="text-info">28</td>
+            </tr>
+            <tr>
+                <td class="text-danger">29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <img src="./public/image/logo.svg" style="width: 200px;filter: brightness(.3)" title="logo" alt="logo">
+        <div class="d-flex justify-content-between mt-5 text-white">
+            <span>저작권 정보</span>
+            <span>이용 안내</span>
+            <span>개인정보 처리방침</span>
+            <span>저작권 보호 정책</span>
+            <span>도로명 주소 안내</span>
+            <span>사이트 오류 신고</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
