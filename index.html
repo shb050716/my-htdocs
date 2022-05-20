@@ -10,94 +10,10 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body class="position-relative" style="overflow-x: hidden">
-<header class="position-fixed">
-    <div class="container h-100 d-flex justify-content-between align-items-center">
-        <input type="checkbox" id="check" name="check">
-        <a href="./index.html"><img src="./public/image/logo.svg" class="logo" title="logo" alt="logo"></a>
-        <label for="check" class="menu d-none d-sm-flex flex-sm-column">
-            <div class="menu-item"></div>
-            <div class="menu-item"></div>
-            <div class="menu-item"></div>
-        </label>
-        <div class="burger d-none d-sm-flex flex-column">
-            <details>
-                <summary>아파트 소개</summary>
-                <div class="d-flex flex-column">
-                    <a href="#">단지 안내</a>
-                    <a href="#">단지 배치도</a>
-                    <a href="#">평면도</a>
-                    <a href="#">커뮤니티 시설</a>
-                    <a href="#">오시는 길</a>
-                </div>
-            </details>
-            <details>
-                <summary>대표회의</summary>
-                <div class="d-flex flex-column">
-                    <a href="#">회장 인사말</a>
-                    <a href="#">대표회 구성</a>
-                    <a href="#">공지사항</a>
-                    <a href="#">추진현황</a>
-                    <a href="#">규정 및 규약</a>
-                </div>
-            </details>
-            <details>
-                <summary>입주민 공간</summary>
-                <div class="d-flex flex-column">
-                    <a href="#">자유게시판</a>
-                    <a href="#">갤러리</a>
-                    <a href="#">생활상식</a>
-                    <div class="d-flex">
-                        <a href="#" class="d-flex align-items-start">행사 안내</a>
-                        <div class="d-flex flex-column">
-                            <a href="./sub1.html" class="sub">이달의 행사</a>
-                            <a href="#" class="sub">연간 행사</a>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <a href="#" class="d-flex align-items-start">민원 관리</a>
-                        <div class="d-flex flex-column">
-                            <a href="#" class="sub">시설 민원</a>
-                            <a href="#" class="sub">일반 민원</a>
-                            <a href="#" class="sub">보안 민원</a>
-                            <a href="#" class="sub">청소 민원</a>
-                        </div>
-                    </div>
-                </div>
-            </details>
-            <details>
-                <summary>선거투표</summary>
-            </details>
-            <details>
-                <summary>주변정보</summary>
-                <div class="d-flex flex-column">
-                    <a href="#">상가</a>
-                    <a href="#">관공서</a>
-                    <a href="#">교육</a>
-                    <a href="#">문화</a>
-                </div>
-            </details>
-            <details>
-                <summary>예약관리</summary>
-                <div class="d-flex flex-column">
-                    <a href="#">스크린 골프</a>
-                    <a href="#">도서실</a>
-                    <a href="#">조식</a>
-                </div>
-            </details>
-            <details>
-                <summary>마이페이지</summary>
-                <div class="d-flex flex-column">
-                    <a href="#">공과금 사용량 조회</a>
-                    <a href="#">관리비 조회</a>
-                    <a href="#">CCTV 조회</a>
-                </div>
-            </details>
-            <div class="d-flex utility-sm-btn">
-                <button>로그인</button>
-                <button>문의하기</button>
-            </div>
-        </div>
-        <ul class="d-flex nav d-sm-none">
+<header>
+    <div class="container h-100 d-flex align-items-center justify-content-between">
+        <img src="./public/image/logo.svg" class="logo" title="logo" alt="logo">
+        <ul class="nav d-sm-none">
             <li>
                 <a href="#" id="depth-1">아파트 소개</a>
                 <div class="depth2" id="depth2-1">
@@ -132,7 +48,7 @@
                         <div class="d-flex">
                             <a href="#" class="d-flex align-items-start">행사 안내</a>
                             <div class="d-flex flex-column">
-                                <a href="./sub1.html" class="sub">이달의 행사</a>
+                                <a href="#" class="sub">이달의 행사</a>
                                 <a href="#" class="sub">연간 행사</a>
                             </div>
                         </div>
@@ -151,9 +67,7 @@
             <li>
                 <a href="#" id="depth-4">선거/투표</a>
                 <div class="depth2" id="depth2-4">
-                    <div>
-
-                    </div>
+                    <div></div>
                 </div>
             </li>
             <li>
@@ -196,217 +110,212 @@
 </header>
 <section id="visual">
     <div class="container">
-        <div class="d-flex align-items-center justify-content-between position-relative flex-sm-column " style="height: 600px;">
-            <img src="./public/image/point.svg" class="position-absolute d-sm-none"
-                 style="width: 80px;height: 80px;left: 30%;top: 15%" title="point" alt="point">
-            <img src="./public/image/point2.svg" class="position-absolute d-sm-none"
-                 style="width: 200px;height: 200px;right: -5%;bottom: 0;z-index: 1" title="point" alt="point">
+        <div class="d-flex justify-content-between position-relative flex-sm-column" style="height: 600px;">
+            <img src="./public/image/point2.svg"
+                 style="position: absolute;width: 200px;height: 200px;right: 0;bottom: 0;z-index: 1" class="d-sm-none" title="point2"
+                 alt="point2">
+            <img src="./public/image/point.svg" class="d-sm-none"
+                 style="position: absolute;width: 80px;height: 80px;left: 30%;top: 20%;z-index: 1" title="point"
+                 alt="point">
 
-            <div class="visual-text d-flex flex-column" style="margin-top: 300px">
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>소통</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+            <div class="visual-text">
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>소통</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>말</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>말</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>바른말</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>예쁜말</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>고운말</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>고운말</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>이쁜말</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>바른말</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>나쁜말</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>착한말</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>토킹</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>나쁜말</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
-                <div class="visual-text-ani">
-                    <h1>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>의사소통</b> 해요</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Beatae enim est exercitationem iste labore. Dolores eos quam voluptas?</span>
+                <div class="visual-text2" style="margin-top: 150px">
+                    <h2>우리 여기서 <br>소식 확인하고 <br>이웃과 <b>토킹</b>해요</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Animi beatae commodi consectetur delectus eligendi enim,</span>
                 </div>
             </div>
             <div class="visual-img">
-                <img src="./public/image/visual1.png" title="visual-img" alt="visual-img">
-                <img src="./public/image/visual2.png" title="visual-img" alt="visual-img">
-                <img src="./public/image/visual3.png" title="visual-img" alt="visual-img">
-                <img src="./public/image/visual4.png" title="visual-img" alt="visual-img">
-                <img src="./public/image/visual5.png" title="visual-img" alt="visual-img">
-                <img src="./public/image/visual6.png" title="visual-img" alt="visual-img">
-                <img src="./public/image/visual7.png" title="visual-img" alt="visual-img">
-                <img src="./public/image/visual8.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image1.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image2.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image3.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image4.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image5.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image6.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image7.png" title="visual-img" alt="visual-img">
+                <img src="./public/image/image8.png" title="visual-img" alt="visual-img">
             </div>
         </div>
-        <div class="visual-var-ani d-flex justify-content-center align-items-center mt-5" style="height: 30px;">
-            <div class="visual-var"></div>
-            <div class="visual-var"></div>
-            <div class="visual-var"></div>
-            <div class="visual-var"></div>
-            <div class="visual-var"></div>
-            <div class="visual-var"></div>
-            <div class="visual-var"></div>
-            <div class="visual-var"></div>
+        <div class="visual-var d-flex justify-content-center align-items-center mt-5" style="height: 30px;">
+            <div class="visual-bar"></div>
+            <div class="visual-bar"></div>
+            <div class="visual-bar"></div>
+            <div class="visual-bar"></div>
+            <div class="visual-bar"></div>
+            <div class="visual-bar"></div>
+            <div class="visual-bar"></div>
+            <div class="visual-bar"></div>
         </div>
     </div>
 </section>
-<section id="notice" style="margin-top: 100px">
+<section id="notice">
     <div class="container">
-        <div class="d-flex align-items-end">
-            <h2 style="font-weight: bold;font-size: 2.5rem">공지사항</h2>
-            <h2 class="ml-3" style="color: #aaa">NOTICE</h2>
+        <div class="title d-flex align-items-end">
+            <h2>공지사항</h2>
+            <h3 style="font-size: 2rem;color: #aaa">NOTICE</h3>
         </div>
-        <div class="notice-box position-relative mt-5">
-            <input type="radio" name="notice" id="tab1" checked>
-            <input type="radio" name="notice" id="tab2">
-            <input type="radio" name="notice" id="tab3">
-            <img src="./public/image/notice.png" class="d-sm-none"
-                 style="position: absolute;right: -10%;top: -25%;width: 550px;height: 550px;" title="notice-img"
+        <div class="notice-box mt-5">
+            <input type="radio" name="notice" id="notice1" checked>
+            <input type="radio" name="notice" id="notice2">
+            <input type="radio" name="notice" id="notice3">
+            <img src="./public/image/notice.png"
+                 style="position: absolute;width: 550px;height: 550px;right: -10%;top: -20%" title="notice-img" class="d-sm-none"
                  alt="notice-img">
-            <img src="./public/image/stroke.svg" class="d-sm-none"
-                 style="position: absolute;right: -10%;top:-25%;width: 550px;height: 550px;z-index: -1" title="stroke"
+            <img src="./public/image/stroke.svg"
+                 style="position: absolute;width: 550px;height: 550px;top: -20%;right: -10%;z-index: -1;" title="stroke" class="d-sm-none"
                  alt="stroke">
-            <img src="./public/image/point.svg" class="d-sm-none"
-                 style="position: absolute;width: 80px;height: 80px;right: -10%;bottom: -10%" title="point" alt="point">
-            <img src="./public/image/point2.svg" class="d-sm-none"
-                 style="position: absolute;width: 200px;height: 200px;left: -10%;bottom: -10%;z-index: -1"
-                 title="point2" alt="point2">
-
-            <div class="d-flex flex-column notice-tab-box h-100">
-                <div class="d-flex align-items-end">
-                    <div class="mr-4 notice-tab tab1">
-                        <label for="tab1">아파트</label>
-                        <div class="notice-under-line"></div>
+            <img src="./public/image/point2.svg" class="d-sm-none" style="position: absolute;width: 200px;height: 200px;left: -7%;bottom: -15%;z-index: -1" title="point2" alt="point2">
+            <div class="notice-title d-flex align-items-end">
+                <div class="d-flex flex-column mr-5 notice-1">
+                    <label for="notice1">아파트</label>
+                    <div class="notice-under-line"></div>
+                </div>
+                <div class="d-flex flex-column mr-5 notice-2">
+                    <label for="notice2">입대의 의결</label>
+                    <div class="notice-under-line"></div>
+                </div>
+                <div class="d-flex flex-column mr-5 notice-3">
+                    <label for="notice3">민원처리</label>
+                    <div class="notice-under-line"></div>
+                </div>
+            </div>
+            <div class="notice-rel d-flex flex-column justify-content-between mt-5" style="width: 70%; height: 80%;">
+                <div class="notice-opacity notice-box1 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
                     </div>
-                    <div class="mr-4 notice-tab tab2">
-                        <label for="tab2">입대의 의결</label>
-                        <div class="notice-under-line"></div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
                     </div>
-                    <div class="mr-4 notice-tab tab3">
-                        <label for="tab3">민원처리</label>
-                        <div class="notice-under-line"></div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
                     </div>
                 </div>
-                <div class="notice-text-box d-flex mt-5 flex-column justify-content-between" style="width: 70%;">
-                    <div class="notice-tab-change change1 flex-column justify-content-between d-flex">
-                        <div class="d-flex flex-column text-white sm-notice sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
+                <div class="notice-opacity notice-box2 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
+                            <span>2020-05-12</span>
                         </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
+                        <div class="under-line"></div>
                     </div>
-                    <div class="notice-tab-change change2 flex-column justify-content-between d-flex">
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
+                            <span>2020-05-12</span>
                         </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
-                        </div>
+                        <div class="under-line"></div>
                     </div>
-                    <div class="notice-tab-change change3 flex-column justify-content-between d-flex">
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
+                            <span>2020-05-12</span>
                         </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
+                            <span>2020-05-12</span>
                         </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년 지역문화유산 활용 전문인력 교육(야행) 안내</span>
+                            <span>2020-05-12</span>
                         </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
+                        <div class="under-line"></div>
+                    </div>
+                </div>
+                <div class="notice-opacity notice-box3 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
+                            <span>2020-05-12</span>
                         </div>
-                        <div class="d-flex flex-column text-white sm-notice">
-                            <div class="d-flex justify-content-between sm-notice2" style="font-size: 1.2rem">
-                                <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
-                                <span>2020-05-12</span>
-                            </div>
-                            <div class="notice-text-line mt-2"></div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
+                            <span>2020-05-12</span>
                         </div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex notice-text justify-content-between">
+                            <span>2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</span>
+                            <span>2020-05-12</span>
+                        </div>
+                        <div class="under-line"></div>
                     </div>
                 </div>
             </div>
@@ -414,51 +323,48 @@
     </div>
 </section>
 <section id="event">
-    <div class="container">
-        <div class="d-flex align-items-end">
-            <h2 style="font-weight: bold;font-size: 2.5rem">이달의 행사</h2>
-            <h2 class="ml-3" style="color: #aaa">EVENT</h2>
+    <div class="container position-relative">
+        <img src="./public/image/stroke.svg" style="position: absolute;width: 300px;height: 300px;right: -1%;top: 0;transform: rotate(45deg);z-index: -1" title="stroke" alt="stroke">
+        <img src="./public/image/point2.svg" style="position: absolute;width: 300px;height: 300px;left: -10%;bottom: -20%;z-index: -1;opacity: .6;transform: rotate(90deg)" title="point2" alt="point2">
+        <div class="title d-flex align-items-end">
+            <h2>이달의 행사</h2>
+            <h3 style="font-size: 2rem;color: #aaa">EVENT</h3>
         </div>
-        <div class="d-flex position-relative justify-content-between mt-5 flex-sm-column align-items-sm-center">
-            <img src="./public/image/point2.svg" class="d-sm-none" style="position: absolute;width: 500px;height: 500px;opacity: .6;left: -30%;bottom: -50%;z-index: -1" title="point2" alt="point2">
-            <img src="./public/image/stroke.svg" class="d-sm-none" style="position: absolute;width: 400px;height: 400px;right: -10%;top: -20%;z-index: -1;transform: rotate(45deg)" title="stroke" alt="stroke">
+        <div class="mt-5 d-flex justify-content-between flex-sm-column align-items-sm-center">
             <div class="event-box">
                 <div class="event-inner"></div>
-                <div class="event-bottom position-relative justify-content-center d-flex flex-column align-items-center">
+                <div class="event-bottom d-flex align-items-center justify-content-center flex-column">
                     <span>문화가 있는 날1 - 신노이</span>
                     <span>얼쑤마루 대공연장</span>
-                    <span>2021년 5월 27일 D-14</span>
-                    <a href="./sub1.html"><button class="btn btn-success event-btn">상세내용 보기</button></a>
+                    <span class="mt-3">2021년 5월 27일 D-14</span>
+                    <button class="event-btn btn btn-outline-success">상세내용 보기</button>
                 </div>
             </div>
             <div class="event-box">
                 <div class="event-inner"></div>
-                <div class="event-bottom position-relative justify-content-center d-flex flex-column align-items-center">
+                <div class="event-bottom d-flex align-items-center justify-content-center flex-column">
                     <span>문화가 있는 날1 - 신노이</span>
                     <span>얼쑤마루 대공연장</span>
-                    <span>2021년 5월 27일 D-14</span>
-                    <a href="./sub1.html"><button class="btn btn-success event-btn">상세내용 보기</button></a>
-
+                    <span class="mt-3">2021년 5월 27일 D-14</span>
+                    <button class="event-btn btn btn-outline-success">상세내용 보기</button>
                 </div>
             </div>
             <div class="event-box">
                 <div class="event-inner"></div>
-                <div class="event-bottom position-relative justify-content-center d-flex flex-column align-items-center">
+                <div class="event-bottom d-flex align-items-center justify-content-center flex-column">
                     <span>문화가 있는 날1 - 신노이</span>
                     <span>얼쑤마루 대공연장</span>
-                    <span>2021년 5월 27일 D-14</span>
-                    <a href="./sub1.html"><button class="btn btn-success event-btn">상세내용 보기</button></a>
-
+                    <span class="mt-3">2021년 5월 27일 D-14</span>
+                    <button class="event-btn btn btn-outline-success">상세내용 보기</button>
                 </div>
             </div>
             <div class="event-box">
                 <div class="event-inner"></div>
-                <div class="event-bottom position-relative justify-content-center d-flex flex-column align-items-center">
+                <div class="event-bottom d-flex align-items-center justify-content-center flex-column">
                     <span>문화가 있는 날1 - 신노이</span>
                     <span>얼쑤마루 대공연장</span>
-                    <span>2021년 5월 27일 D-14</span>
-                    <a href="./sub1.html"><button class="btn btn-success event-btn">상세내용 보기</button></a>
-
+                    <span class="mt-3">2021년 5월 27일 D-14</span>
+                    <button class="event-btn btn btn-outline-success">상세내용 보기</button>
                 </div>
             </div>
         </div>
@@ -466,66 +372,14 @@
 </section>
 <section id="result">
     <div class="container">
-        <div class="d-flex align-items-end">
-            <h2 style="font-weight: bold;font-size: 2.5rem">최근투표결과</h2>
-            <h2 class="ml-3" style="color: #aaa">RESULT</h2>
+        <div class="title d-flex align-items-end">
+            <h2>최근투표결과</h2>
+            <h3 style="font-size: 2rem;color: #aaa">RESULT</h3>
         </div>
-        <div class="d-flex justify-content-between mt-5 position-relative">
-            <img src="./public/image/stroke.svg" class="d-sm-none" style="position: absolute;bottom: -50%;left: -15%;width: 400px;height: 400px;z-index: -1;" title="stroke" alt="stroke">
-            <img src="./public/image/point2.svg" class="d-sm-none" style="position: absolute;right: -20%;top: -60%;width: 500px;height: 500px;transform: rotate(15deg)" title="point2" alt="point2">
-            <div class="result-img w-50">
-                <img src="./public/image/result.jpg" title="result-img" alt="result-img">
-            </div>
-            <div class="d-flex">
-                <div class="d-flex flex-column circle-check mr-5">
-                    <div class="d-flex circle-infor mb-3 align-items-center">
-                        <div class="circle-item"></div>
-                        <span>찬 성</span>
-                    </div>
-                    <div class="d-flex circle-infor mb-3 align-items-center">
-                        <div class="circle-item"></div>
-                        <span>반 대</span>
-                    </div>
-                    <div class="d-flex circle-infor align-items-center">
-                        <div class="circle-item"></div>
-                        <span>기 권</span>
-                    </div>
-                </div>
-                <div class="circle"></div>
-            </div>
+        <div class="result-circle">
+
         </div>
     </div>
 </section>
-<section id="banner">
-    <div class="container">
-        <div class="d-flex align-items-end">
-            <h2 style="font-weight: bold;font-size: 2.5rem">배너</h2>
-            <h2 class="ml-3" style="color: #aaa">BANNER</h2>
-        </div>
-        <div class="d-flex flex-wrap justify-content-between mt-3">
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-            <div style="width: 22%;height: 100px;border: 1px solid #aaa;margin: 20px 0"></div>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <img src="./public/image/logo.svg" style="width: 200px;filter: brightness(.3)" title="logo" alt="logo">
-        <div class="d-flex justify-content-between mt-5 text-white">
-            <span>저작권 정보</span>
-            <span>이용 안내</span>
-            <span>개인정보 처리방침</span>
-            <span>저작권 보호 정책</span>
-            <span>도로명 주소 안내</span>
-            <span>사이트 오류 신고</span>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
